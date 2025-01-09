@@ -1,0 +1,19 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 10, 3, 8, 15, 1 };
+
+        var sortedNumbers = numbers.OrderBy(num => num);
+
+        Console.WriteLine("Sorted Numbers:");
+        foreach (var number in sortedNumbers)
+        {
+            Console.WriteLine(number);
+        }
+    }
+}
