@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        var person = ("John", 30);
+        Console.WriteLine($"Name: {person.Item1}, Age: {person.Item2}");
+
+        // Destructuring the tuple
+        var (name, age) = person;
+        Console.WriteLine($"Name: {name}, Age: {age}");
+    }
+}
