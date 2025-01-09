@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string? nullableString = null;
+
+        // Nullable reference type is allowed to be null
+        if (nullableString == null)
+        {
+            Console.WriteLine("The string is null.");
+        }
+
+        string nonNullableString = "Hello, World!";
+        Console.WriteLine(nonNullableString);
+    }
+}
