@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Dictionary<string, string> capitals = new Dictionary<string, string>
+        {
+            { "USA", "Washington, D.C." },
+            { "India", "New Delhi" },
+            { "France", "Paris" }
+        };
+
+        foreach (var country in capitals)
+        {
+            Console.WriteLine($"Country: {country.Key}, Capital: {country.Value}");
+        }
+    }
+}
