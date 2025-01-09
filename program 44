@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        HashSet<string> uniqueFruits = new HashSet<string>
+        {
+            "Apple",
+            "Banana",
+            "Cherry",
+            "Apple", // Duplicate
+            "Grape"
+        };
+
+        foreach (var fruit in uniqueFruits)
+        {
+            Console.WriteLine(fruit);
+        }
+    }
+}
