@@ -1,0 +1,15 @@
+using System;
+
+delegate int Operation(int a, int b);
+
+class Program
+{
+    static void Main()
+    {
+        Operation add = (a, b) => a + b;
+        Operation multiply = (a, b) => a * b;
+
+        Console.WriteLine($"Addition: {add(10, 5)}");
+        Console.WriteLine($"Multiplication: {multiply(10, 5)}");
+    }
+}
