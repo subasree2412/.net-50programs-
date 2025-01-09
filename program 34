@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Dictionary<string, Person> people = new Dictionary<string, Person>
+        {
+            { "1", new Person { Name = "Alice", Age = 30 } },
+            { "2", new Person { Name = "Bob", Age = 25 } }
+        };
+
+        foreach (var entry in people)
+        {
+            Console.WriteLine($"ID: {entry.Key}, Name: {entry.Value.Name}, Age: {entry.Value.Age}");
+        }
+    }
+}
