@@ -1,0 +1,13 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Lazy<string> lazyString = new Lazy<string>(() => "Lazy Initialization Example");
+
+        Console.WriteLine("Before accessing Lazy variable.");
+        Console.WriteLine(lazyString.Value);  // Lazy initialization occurs here
+        Console.WriteLine("After accessing Lazy variable.");
+    }
+}
