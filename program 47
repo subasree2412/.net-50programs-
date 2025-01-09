@@ -1,0 +1,29 @@
+using System;
+
+class Parent
+{
+    public void Show()
+    {
+        Console.WriteLine("Parent class method");
+    }
+}
+
+class Child : Parent
+{
+    public new void Show()
+    {
+        Console.WriteLine("Child class method");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Parent obj = new Child();
+        obj.Show();  // Calls Parent's Show method due to polymorphism
+
+        Child childObj = new Child();
+        childObj.Show();  // Calls Child's Show method
+    }
+}
