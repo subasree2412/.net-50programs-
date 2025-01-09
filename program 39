@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        var intBox = new Box<int>(5);
+        var stringBox = new Box<string>("Hello");
+
+        Console.WriteLine($"Integer: {intBox.Value}");
+        Console.WriteLine($"String: {stringBox.Value}");
+    }
+}
+
+class Box<T>
+{
+    public T Value { get; set; }
+
+    public Box(T value)
+    {
+        Value = value;
+    }
+}
