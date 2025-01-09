@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Stack: Last In, First Out (LIFO)
+        Stack<string> stack = new Stack<string>();
+        stack.Push("A");
+        stack.Push("B");
+        stack.Push("C");
+
+        Console.WriteLine("Stack:");
+        while (stack.Count > 0)
+        {
+            Console.WriteLine(stack.Pop());
+        }
+
+        // Queue: First In, First Out (FIFO)
+        Queue<string> queue = new Queue<string>();
+        queue.Enqueue("X");
+        queue.Enqueue("Y");
+        queue.Enqueue("Z");
+
+        Console.WriteLine("\nQueue:");
+        while (queue.Count > 0)
+        {
+            Console.WriteLine(queue.Dequeue());
+        }
+    }
+}
