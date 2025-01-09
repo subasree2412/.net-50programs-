@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Func<int, int, int> add = delegate (int a, int b)
+        {
+            return a + b;
+        };
+
+        Console.WriteLine($"Sum: {add(10, 20)}");
+    }
+}
