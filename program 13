@@ -1,0 +1,10 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Func<int, int, int> addNumbers = (a, b) => a + b;
+        Console.WriteLine("Sum: " + addNumbers(10, 20));
+    }
+}
