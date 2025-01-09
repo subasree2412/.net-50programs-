@@ -1,0 +1,13 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int? num1 = null;
+        int? num2 = 5;
+
+        Console.WriteLine($"Nullable num1: {num1}");
+        Console.WriteLine($"Nullable num2: {num2}");
+    }
+}
