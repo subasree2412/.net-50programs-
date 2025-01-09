@@ -1,0 +1,10 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int age = 30;
+        Console.WriteLine($"The name of the variable is: {nameof(age)}");
+    }
+}
