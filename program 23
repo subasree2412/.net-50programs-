@@ -1,0 +1,23 @@
+using System;
+
+interface IDriveable
+{
+    void Drive();
+}
+
+class Car : IDriveable
+{
+    public void Drive()
+    {
+        Console.WriteLine("The car is driving.");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        IDriveable car = new Car();
+        car.Drive();
+    }
+}
