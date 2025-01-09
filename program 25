@@ -1,0 +1,20 @@
+using System;
+
+public delegate void Notify();
+
+class Program
+{
+    public static event Notify OnNotification;
+
+    static void Main()
+    {
+        // Subscriber 1
+        OnNotification += () => Console.WriteLine("Subscriber 1: Notification received!");
+        
+        // Subscriber 2
+        OnNotification += () => Console.WriteLine("Subscriber 2: Notification received!");
+        
+        // Trigger event
+        OnNotification?.Invoke();
+    }
+}
