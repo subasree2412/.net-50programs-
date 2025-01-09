@@ -1,0 +1,21 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 10, 20, 30, 40, 50 };
+
+        var result = from num in numbers
+                     where num > 25
+                     select num;
+
+        Console.WriteLine("Numbers greater than 25:");
+        foreach (var num in result)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}
