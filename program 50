@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        DateTime currentDate = DateTime.Now;
+        Console.WriteLine("Current Date: " + currentDate);
+
+        DateTime nextWeek = currentDate.AddDays(7);
+        Console.WriteLine("Next Week: " + nextWeek);
+
+        DateTime lastMonth = currentDate.AddMonths(-1);
+        Console.WriteLine("Last Month: " + lastMonth);
+    }
+}
