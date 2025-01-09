@@ -1,0 +1,28 @@
+using System;
+
+class InvalidAgeException : Exception
+{
+    public InvalidAgeException(string message) : base(message) { }
+}
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            int age = -1;
+
+            if (age < 0)
+            {
+                throw new InvalidAgeException("Age cannot be negative.");
+            }
+
+            Console.WriteLine("Valid Age: " + age);
+        }
+        catch (InvalidAgeException ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+}
