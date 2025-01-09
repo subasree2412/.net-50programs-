@@ -1,0 +1,22 @@
+using System;
+
+public static class StringExtensions
+{
+    public static bool IsUpperCase(this string str)
+    {
+        return str.Equals(str.ToUpper());
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        string text = "HELLO";
+
+        if (text.IsUpperCase())
+        {
+            Console.WriteLine($"{text} is in uppercase.");
+        }
+    }
+}
