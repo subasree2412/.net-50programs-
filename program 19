@@ -1,0 +1,25 @@
+using System;
+
+class MyArray
+{
+    private int[] arr = new int[5];
+
+    public int this[int index]
+    {
+        get { return arr[index]; }
+        set { arr[index] = value; }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        MyArray myArray = new MyArray();
+        myArray[0] = 10;
+        myArray[1] = 20;
+
+        Console.WriteLine("First Element: " + myArray[0]);
+        Console.WriteLine("Second Element: " + myArray[1]);
+    }
+}
