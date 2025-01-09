@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            int num = int.Parse("abc");  // This will throw FormatException
+        }
+        catch (FormatException ex)
+        {
+            Console.WriteLine("Format Exception: " + ex.Message);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("General Exception: " + ex.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Execution completed.");
+        }
+    }
+}
