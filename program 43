@@ -1,0 +1,28 @@
+using System;
+using System.Collections;
+
+class Program
+{
+    static void Main()
+    {
+        var numbers = new NumberCollection();
+
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+    }
+}
+
+class NumberCollection : IEnumerable
+{
+    private int[] numbers = { 1, 2, 3, 4, 5 };
+
+    public IEnumerator GetEnumerator()
+    {
+        foreach (int number in numbers)
+        {
+            yield return number;
+        }
+    }
+}
