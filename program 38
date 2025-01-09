@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    const double Pi = 3.14159;  // Constant value
+    readonly int birthYear;      // Readonly variable
+
+    public Program(int year)
+    {
+        birthYear = year;
+    }
+
+    static void Main()
+    {
+        Program program = new Program(1995);
+        Console.WriteLine($"Pi: {Pi}");
+        Console.WriteLine($"Birth Year: {program.birthYear}");
+    }
+}
