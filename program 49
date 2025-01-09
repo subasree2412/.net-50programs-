@@ -1,0 +1,11 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string[] words = { "Hello", "from", ".NET", "5!" };
+        string result = string.Join(" ", words);
+        Console.WriteLine(result);
+    }
+}
