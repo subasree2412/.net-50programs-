@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        DateTime currentDate = DateTime.Now;
+        
+        Console.WriteLine("Current Date and Time: " + currentDate);
+        Console.WriteLine("Year: " + currentDate.Year);
+        Console.WriteLine("Month: " + currentDate.Month);
+        Console.WriteLine("Day: " + currentDate.Day);
+        Console.WriteLine("Time: " + currentDate.ToShortTimeString());
+    }
+}
